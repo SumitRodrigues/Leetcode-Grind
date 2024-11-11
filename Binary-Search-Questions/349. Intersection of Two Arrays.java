@@ -1,5 +1,5 @@
 //Using While Loop Two Pointer Approach
-import java.util.Arrays;
+import java.util.*;
 
 class Solution {
     public int[] intersection(int[] nums1, int[] nums2) {
@@ -31,8 +31,8 @@ class Solution {
     }
 }
 
-//Usinh HashSet Method
-class Solution {
+//Using HashSet Method
+class solution2 {
     public int[] intersection(int[] nums1, int[] nums2) {
         // Use two hash sets to track elements from each array
         Set<Integer> set1 = new HashSet<>();
