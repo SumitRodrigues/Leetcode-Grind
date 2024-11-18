@@ -1,3 +1,4 @@
+import java.util.*;
 // Using brute force
 
 class Solution {
@@ -30,7 +31,7 @@ class Solution {
 
 //Using Sorting
 
-public class Solution {
+class Solution2 {
     public int longestConsecutive(int[] nums) {
         if (nums.length == 0) {
             return 0;
