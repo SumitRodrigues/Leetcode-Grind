@@ -21,3 +21,17 @@ class Solution {
 // O(1)
 
 
+// Using in built function
+class Solution2 {
+    public int hammingWeight(int n) {
+        return Integer.bitCount(n);
+    }
+}
+
+// Time & Space Complexity
+// Time complexity: 
+
+// O(1)
+// Space complexity: 
+
+// O(1)
