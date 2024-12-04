@@ -44,3 +44,23 @@ class Solution2 {
 // Space complexity: 
 
 // O(1)
+
+// Using inbuilt function
+
+class Solution3 {
+    public int[] countBits(int n) {
+        int[] res = new int[n+1];
+        for(int i = 0; i <= n; i++){
+            res[i] = Integer.bitCount(i);
+        }
+        return res;
+    }
+}
+
+// Time & Space Complexity
+// Time complexity: 
+
+// O(n)
+// Space complexity: 
+
+// O(1)
