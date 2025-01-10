@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 class Solution {
     public List<String> wordSubsets(String[] words1, String[] words2) {
         int arr[] = new int[26];
