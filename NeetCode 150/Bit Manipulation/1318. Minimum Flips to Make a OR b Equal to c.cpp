@@ -40,3 +40,15 @@ public:
         return flips;
     }
 };
+
+// Second approach using inbuilt function
+class Solution {
+public:
+    int minFlips(int a, int b, int c) {
+        int result = ((a|b) ^ c);
+        int result1 = (a & b);
+        int result2 = (result & result1);
+
+        return __builtin_popcount(result) + __builtin_popcount(result2);
+    }
+};
