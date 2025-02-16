@@ -1,3 +1,4 @@
+// Using BFS
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -38,5 +39,22 @@ class Solution {
             }
         }
         return root;
+    }
+}
+
+// using DFS
+
+class Solution2 {
+    public TreeNode invertTree(TreeNode root) {
+        if(root == null){
+            return null;
+        }
+
+        TreeNode node = TreeNode(root.val);
+
+        node.left = invertTree(root.right);
+        node.right = invertTree(root.left);
+
+        return node;
     }
 }
