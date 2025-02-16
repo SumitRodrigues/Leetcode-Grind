@@ -1,3 +1,5 @@
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 import javax.swing.tree.TreeNode;
@@ -45,6 +47,31 @@ import javax.swing.tree.TreeNode;
                 stack.push(new Pair<>(root.left, depth + 1));
                 stack.push(new Pair<>(root.right, depth + 1));
             }
+        }
+        return res;
+    }
+}
+
+ // Using BFS
+ class Solution3 {
+    public int maxDepth(TreeNode root) {
+        Queue<TreeNode> q = new LinkedList<>();
+        if(root != null){
+            q.add(root);
+        }
+        int res = 0;
+        while(!q.isEmpty()){
+            int size = q.size();
+            for(int i = 0; i < size; i++){
+                TreeNode node = q.poll();
+                if(node .left != null){
+                    q.add(node.left);
+                }
+                if(node.right != null){
+                    q.add(node.right);
+                }
+            }
+            res++;
         }
         return res;
     }
