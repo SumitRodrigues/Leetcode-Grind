@@ -42,7 +42,7 @@ class Solution2:
             if memo[i][target] != -1:
                 return memo[i][target]
             
-            memo[i][target] = (dfs(i + 1, target) or dfs(I + 1, target - nums[i]))
+            memo[i][target] = (dfs(i + 1, target) or dfs(i + 1, target - nums[i]))
 
             return memo[i][target]
         
